@@ -22,4 +22,6 @@ urlpatterns = [
     path('login', views.login),
     path('callback', views.callback),
     path('pick_role', views.pick_role),
+    path('logout', views.logout),
+    path('changepass', views.changepass),
 ]

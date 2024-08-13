@@ -11,6 +11,13 @@ from django.contrib.auth.models import User
 def index(request: HttpRequest):
     return HttpResponse("")
 
+def logout(request: HttpRequest):
+    auth.logout(request)
+    return HttpResponse("You have been logged out. You can close this window.")
+
+def changepass(request: HttpRequest):
+    return HttpResponse("There is no password to change!")
+
 def login(request: HttpRequest):
     for key, value in request.GET.items():
         request.session[key] = value
