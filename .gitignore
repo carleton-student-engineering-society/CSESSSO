@@ -1,0 +1,5 @@
+*.sqlite*
+env
+venv
+csessso/certificates/
+__pycache__

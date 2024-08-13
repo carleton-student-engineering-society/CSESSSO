@@ -1,0 +1,23 @@
+<body>
+<h1>Select role</h1>
+<h2>You are signed in as {{ request.session.email }}</h2>
+
+<table>
+<tr>
+<th>Email</th>
+<th>Login</th>
+</tr>
+{% for role in roles %}
+<tr>
+<td>{{ role.role.email }}</td>
+<td>
+<form method="POST" action="/pick_role">
+{% csrf_token %}
+<input type="hidden" name="role" id="role" value="{{ role.role.email }}">
+<input type="submit" value="Login">
+</form>
+</td>
+</tr>
+{% endfor %}
+</table>
+</body>
