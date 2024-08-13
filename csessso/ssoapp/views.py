@@ -9,7 +9,7 @@ from models.models import Role, RoleUser
 from django.contrib.auth.models import User
 
 def index(request: HttpRequest):
-    return HttpResponse("Index")
+    return HttpResponse("")
 
 def login(request: HttpRequest):
     for key, value in request.GET.items():
