@@ -35,6 +35,8 @@ SESSION_COOKIE_AGE = 10 * 60  # 10 minute sessions
 
 # Application definition
 
+CSRF_TRUSTED_ORIGINS = [ "*.engsoc.net" ]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
