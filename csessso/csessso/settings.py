@@ -35,7 +35,7 @@ SESSION_COOKIE_AGE = 10 * 60  # 10 minute sessions
 
 # Application definition
 
-CSRF_TRUSTED_ORIGINS = [ "*.engsoc.net" ]
+CSRF_TRUSTED_ORIGINS = [ "https://*.engsoc.net" ]
 
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
